@@ -19,13 +19,129 @@
 	--color-background:#eee;
 }
 
-
+@font-face {
+	font-family: "lettertype";
+	src: url(/font/Jost/Jost-VariableFont_wght.ttf);
+}
 
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
+header h1 {
+	font-family: "lettertype";
+	font-weight: 400;
+}
 
-/* jouw code */
 
+h2 {
+	font-family: "lettertype";
+	font-weight: 400;
+}
+
+h3 {
+	font-family: "lettertype";
+	font-weight: 400;
+}
+
+a {
+	font-family: "lettertype";
+}
+
+/* html { 
+	font-family: "lettertype";
+	font-weight: 400;
+} */
+
+header {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	position: fixed;
+	z-index:6;
+}
+
+h1 {
+	flex-grow:1;
+	display:flex;
+  	justify-content:center;
+}
+
+header > button { 
+	order: -1;
+}
+
+li { 
+	list-style-type: none;
+}
+
+nav {
+	padding:1em;
+	font-family: "lettertype";
+	background-color: white;
+	
+	display:grid;
+	align-content:start;
+	gap:1em;
+	
+	/* background-image:var(--menu-gradient); */
+	
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	translate:-100%;
+	transition:1s;
+	z-index: 4;
+	
+  }
+
+  nav.toonMenu {
+   translate:0%; 
+
+  }
+
+  form { 
+	padding:1em;
+	font-family: "lettertype";
+	background-color: white;
+	
+	display:flex;
+
+	align-items: stretch;
+	gap:1em;
+
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	
+	translate:0% -100%;
+	transition:1s;
+	z-index: 5;
+
+  }
+
+  form.toonZoek {
+	translate:0%; 
+	top: 7em;
+	 
+   }
+
+   section:first-of-type{
+	position: relative;
+   }
+
+   main img{
+	width: 100%;
+   }
+
+   main h2 { 
+	position: absolute;
+	bottom: 2em;
+	text-align: center;
+	align-content: center;
+   }
