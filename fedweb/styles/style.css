@@ -1,0 +1,306 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box; 
+  padding:0;
+  margin:0; 
+}
+
+@font-face {
+	font-family: "lettertype";
+	src: url(/font/Jost/Jost-VariableFont_wght.ttf);
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	color-scheme:light dark;
+
+	--color-text:light-dark(black, white);
+	--color-background:light-dark(white,black);
+	--lv-font: "lettertype";
+}
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+
+
+/*********** BEGINT HIER: Global Styling ***********/
+/* Maten voor foto's op alle pagina's */
+main img{
+    width: 100%;
+}
+
+li { 
+	list-style-type: none;
+}
+
+/* Styling voor alle titels op de website */
+h1, h2, h3 {
+	font-weight: 400;
+	font-family: var(--lv-font);
+	text-align: center;
+}
+
+h2 { 
+	font-size: 1.4em;
+	text-align: center;
+}
+
+/* Styling voor alle linkjes op de website */
+a {
+	font-family: var(--lv-font);
+}
+
+p {
+	font-weight: 400;
+	font-family: var(--lv-font);
+}
+/*********** STOPT HIER: Global Styling ***********/
+
+
+
+
+
+
+
+
+/*********** BEGINT HIER: Styling voor alle de menubalk en hamburger menu ***********/
+header {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	position: fixed;
+	z-index:6;
+	width: 100vw;
+	left: 0;
+	background-color: var(--color-background);
+	height: 4em;
+}
+
+header > h1 {
+	flex-grow:1;
+	display:flex;
+  	justify-content:center;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+header > button { 
+	order: -1;
+	border:none;
+	background-color:var(--color-background);
+	padding-top: 0.2em; 
+	padding-right: 0.2em; 
+	padding-bottom: 0.2em; 
+	padding-left: 0.2em; 
+}
+
+nav {
+	font-family: "lettertype";
+	background-color: var(--color-background);
+	
+	position:fixed;
+	left:0;
+	right:0;
+	top: 4em;
+	bottom:0;
+	
+	translate:0% -100%;
+	transition:1s;
+	z-index: 4;
+  }
+
+  nav ul {
+	display:flex;
+	flex-direction: column;
+	gap: 1em;
+	padding-left: 2em;
+  }
+
+  nav:nth-of-type(1) li {
+	font-size: x-large;
+  }
+
+  nav.toonMenu {
+   translate:0%; 
+  }
+
+  nav:nth-of-type(1) button { 
+	background-color: (var(--color-background));
+	border: none;
+}
+
+  form { 
+	padding:1em;
+	font-family: "lettertype";
+	background-color: var(--color-background);
+	
+	display:flex;
+	align-items: stretch;
+	gap:1em;
+
+	position:fixed;
+	left:0;
+	right:0;
+	top: 0;
+	
+	translate:0% -100%;
+	transition:1s;
+	z-index: 5;
+
+	display: flex;
+  	justify-content: center;
+  	align-self: center;
+  }
+
+  form:nth-last-of-type(1) > input { 
+	border-radius: 1em;
+	outline:0.5em
+  }
+
+  form:nth-of-type(1) button { 
+	background-color: var(--color-background);
+	border: none;
+  }
+
+  form.toonZoek {
+	translate:0%; 
+	top: 4em; 
+   }
+/*********** STOPT HIER: Styling voor alle de menubalk en hamburger menu ***********/
+
+
+
+
+/*********** BEGINT HIER: Styling voor de "Exclusive Prelaunch: Neverfull Inside Out"-section ***********/
+   main > section:nth-last-of-type(1) {
+	top: 4em;
+	padding-bottom: 4em;
+	width: 100%;
+   }
+
+/* Hier probeer ik in de eerste section de h2 in het midden en boven de foto te zetten */
+   main > section:nth-of-type(1) > h2 { 
+	bottom: 7em;
+	top: 70%; 
+	left: 25%; 
+   }
+
+/* Hiermee stijl ik het linkje (a) in de eerste section */
+/* Ik probeer het in het midden te zetten en boven de image */
+   main > section:nth-of-type(1) > a {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+   }
+
+   /* Dit is de styling voor de header image */
+   /* Ik zorg ervoor dat de foto "inzoomt" binnen een bepaald frame */
+   main > section:nth-of-type(1) img {
+	padding-top: 4em;
+
+	height: 35em;
+	width: 100%;
+	object-fit:cover;
+
+	display: block;
+
+}
+/*********** STOPT HIER: Styling voor de "Exclusive Prelaunch: Neverfull Inside Out"-section***********/
+
+
+
+
+/*********** BEGINT HIER: Dit is de styling voor "Maison's Creations"-section ***********/
+/* Met padding geef ik het witruimte boven en onder */
+	main > section:nth-of-type(2) { 
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	main > section:nth-of-type(2) ul{
+		gap: 1.3em;
+	}
+
+	main > section:nth-of-type(2) li{ 
+		display: flex;
+		flex-direction:column-reverse;
+		gap: 0.7em;
+	}
+
+	main > section:nth-of-type(2) h2 { 
+		padding-top: 2em;
+		padding-bottom: 1em;
+}
+
+main > section:nth-of-type(2) h3 { 
+	font-size: 1em;
+
+}
+
+/* Hiermee maak ik een grid aan voor alle eerste ul's in een section */
+   section > ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 2px;
+	grid-row-gap: 2px;
+	padding-left: 0;
+}
+/*********** STOPT HIER: Dit is de styling voor "Maison's Creations"-section ***********/
+
+
+
+/*********** BEGINT HIER: Dit is de styling voor "LV Fall"-section ***********/
+/* section:nth-of-type(3) {
+	padding-top: 3em;
+} */
+
+section:nth-of-type(3) > p { 
+	padding-top: 2em;
+	font-size: 0.7em;
+}
+
+section:nth-of-type(3) h2,p { 
+	text-align: center;
+} 
+section:nth-of-type(3) > img:nth-of-type(1) {
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+	height: 35em;
+	width: 100%;
+	object-fit:cover;
+
+	display: block;
+}
+
+section:nth-of-type(3) ul {
+	gap: 1.3em;
+}
+section:nth-of-type(3) li {
+	display: flex;
+	flex-direction: column-reverse;
+}
+main > section:nth-of-type(3) h3 { 
+	font-size: 1em;
+	text-align: left;
+}
+
+section:nth-of-type(3) {
+	padding-top: 1em;
+}
+
+/* Omdat text-align niet werkte heb ik dit gedaan. */
+section:nth-of-type(3) a {
+	display: flex;
+  	justify-content: center;
+  	align-self: center;
+}
