@@ -6,7 +6,7 @@ Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal
 
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
 
-
+test test test ik loop een beetje vast hihih
 
 
 
@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Safira Kwyasse
+  (Mehmet Demirsoy)
 
   #### Je startniveau:
-  Blauw
+  (blauwe piste)
 
   #### Je focus:
-  Responsive
+  (Responsive)
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  (https://en.louisvuitton.com/eng-nl/stories/personalization)
+  [https://nl.gymshark.com]
 
   #### Screenshot(s) van de eerste pagina (small screen): 
- Shop
-  <img src="readme-images/home.png" width="375px" alt="Homepagina">
+  Gymshark  
+  <img src="readme-images/beginpagina.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Foundation
-  <img src="readme-images/product.png.png" width="375px" alt="Productpagina van een tas">
+  Gymshark heren  
+  <img src="readme-images/tweedepagina.pngjpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -56,7 +56,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+ 	  De website heeft ongestructureerde HTML-code. Bij een deel is eerst de afbeelding (img) erin gecodeerd en daarna pas de alt-tekst, wat voor onduidelijkheid zorgt. Daarnaast zijn niet alle alt-teksten goed uitgelegd.
+    De taal klopt niet helemaal. Het is een Nederlandse site, maar je ziet vaak Engelse woorden zoals “shop nu” en “shop now” door elkaar. Dat maakt het soms verwarrend.
+	  Het valt me op dat Gymshark niet volledig focust op navigatiegemak voor mensen met een beperking. De code is niet goed geformuleerd voor schermlezers en hulpmiddelen.
+	  Het kleurcontrast is op sommige plekken te laag, waardoor het lastig kan zijn om te lezen. Ze hebben ook geen dark mode, wat best essentieel is voor mensen met sensorische problemen.
 
 </details>
 
