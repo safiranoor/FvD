@@ -23,6 +23,7 @@
 	--color-background:light-dark(white,black);
 	--placeholder-color: light-dark( #aaa,white);
 	--price-color: light-dark(#aaa, #aaa);
+	--hover: light-dark(pink,pink);
 	--lv-font: "lettertype";
 
 	--shadow-color-light: rgba(0, 0, 0, 0.2);
