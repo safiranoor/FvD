@@ -24,18 +24,10 @@ function sluitMenu(){
   deNav.classList.remove("toonMenu");  
 }
 
-// const searchOpenButton = document.querySelector("header > button:nth-of-type(2)");
-// const deInput = document.querySelector("header form");
-
-// searchOpenButton.onclick = openZoek;
-
-// function openZoek(){
-//     deInput.classList.add("toonZoek") 
-//   }
-
+// stap 1: sla search button op 
 const searchOpenButton = document.querySelector("header > button:nth-of-type(2)");
 
-// stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
+// stap 2: laat de search button luisteren naar kliks en voer dan een functie uit
 searchOpenButton.onclick = toggleSearch;
 
 // stap 3: voeg in de functie een claas toe aan de nav
@@ -47,3 +39,5 @@ const zoekForm = document.querySelector("body > form");
   // toggle
   zoekForm.classList.toggle("toonZoek");
 }
+
+
