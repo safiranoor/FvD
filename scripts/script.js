@@ -10,19 +10,20 @@ menuOpenButton.onclick = openMenu;
 
 // stap 3: voeg in de functie een class toe aan de nav
 function openMenu(){
-  deNav.classList.add("toonMenu")
+  deNav.classList.toggle("toonMenu")
+  menuOpenButton.classList.toggle("open")
 }
 
 // stap 1 - zoek sluiten button op
-const menuSluitButton = document.querySelector("body > nav button");
+// const menuSluitButton = document.querySelector("body > nav button");
 
 // stap 2 - laat die button luisteren naar kliks
-menuSluitButton.onclick = sluitMenu;
+// menuSluitButton.onclick = sluitMenu;
 
 // stap 3 - in de functie verwijder de class van de nav
-function sluitMenu(){
-  deNav.classList.remove("toonMenu");  
-}
+// function sluitMenu(){
+  // deNav.classList.remove("toonMenu");  
+// }
 
 // stap 1: sla search button op 
 const searchOpenButton = document.querySelector("header > button:nth-of-type(2)");
